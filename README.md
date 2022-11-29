@@ -11,7 +11,7 @@
 
 Cf. [Small is beautiful: economics as if people mattered](https://openlibrary.org/works/OL1622912W/Small_Is_Beautiful) (1973)
 
-![](small-is-beautiful-modern-world.png)
+[![](sib-cover-89.png)](https://openlibrary.org/works/OL1622912W/Small_Is_Beautiful)
 
 ## It's simple
 
