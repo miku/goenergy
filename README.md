@@ -1,5 +1,4 @@
 # Go energy efficiency
-
 > Lightning Talk, [Leipzig Gophers](https://golangleipzig.space) [#32](https://golangleipzig.space/posts/meetup-32-invitation/), [Martin Czygan](https://www.linkedin.com/in/martin-czygan-58348842)
 
 ## Document [52021PC0558](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0558)
@@ -9,9 +8,22 @@
 > of greenhouse gases in **2050** and where economic growth is **decoupled from
 > resource use** [...] To reach these objectives, "energy efficiency must be prioritised".
 
-Cf. [Small is beautiful: economics as if people mattered](https://openlibrary.org/works/OL1622912W/Small_Is_Beautiful) (1973)
+Cf. [Small is beautiful: economics as if people mattered](https://openlibrary.org/works/OL1622912W/Small_Is_Beautiful) (1973) -- found via [Cloud Native Go](https://www.oreilly.com/library/view/cloud-native-go/9781492076322/)
 
 [![](sib-cover-89.png)](https://openlibrary.org/works/OL1622912W/Small_Is_Beautiful)
+
+> Let us take a closer look at this 'natural capital'. First of all, and most
+> obviously, there are the **fossil fuels**. No-one, I am sure, will deny that
+> we are treating them as **income** items although they are undeniably
+> **capital** items.
+
+> If we treated them as capital items, we should be concerned with
+> conservation: we should do everything in our power to try and minimise their
+> current rate of use; we might be saying, for instance, that the money
+> obtained from the realisation of these assets - these irreplaceable assets -
+> must be placed into a special fund to be devoted exclusively to the evolution
+> of production methods and patterns of living which do not depend on fossil
+> fuels at all or depend on them only to a very slight extent.
 
 ## It's simple
 
