@@ -38,9 +38,104 @@ Many papers and whitepapers discussing EE:
 
 ## Anecdata
 
-> We replaced a previous service with a Go implementation and we require 1/8 of the resources.
-
 > Previously, we needed two servers, now we one is more than enough.
 
+> We replaced a previous service with a Go implementation and we require 1/8 of the resources.
+
+Personally:
+
+* "big data on a budget" projects, processing TBs w/o a cluster
+
 ## Paper
+
+> [Ranking Programming Languages by Energy Efficiency](https://haslab.github.io/SAFER/scp21.pdf)
+
+* 10 tasks (n-body, mandelbrot, binary-trees, ...), 27 languages (functional, OO, imp, scripting)
+
+> While the concern on the computers' energy efficiency started by the hardware
+> manufacturers, it quickly became a concern for software developers too [...]
+
+Using [RAPL](https://en.wikipedia.org/wiki/Perf_(Linux)#RAPL), [LWN545745](https://lwn.net/Articles/545745/) - to collect energy measurements.
+
+Some tools (on Ubuntu): powertop, powercap-utils, ...
+
+```shell
+$ cat /boot/config-$(uname -r) | grep RAPL
+CONFIG_PERF_EVENTS_INTEL_RAPL=m
+CONFIG_PROC_THERMAL_MMIO_RAPL=m
+CONFIG_INTEL_RAPL_CORE=m
+CONFIG_INTEL_RAPL=m
+```
+
+Powertop seems to work w/o RAPL, too.
+
+> RAPL support allows PowerTOP to provide more accurate power measurements. -- [01/powertop](https://01.org/sites/default/files/page/powertop_users_guide_201412.pdf#page=6)
+
+Method: [system](https://man7.org/linux/man-pages/man3/system.3.html) syscall running program, measure via RAPL
+
+## Selected results
+
+| Benchmark      | Position (Go) |
+|----------------|---------------|
+| binary-tree    | 20/27         |
+| fannkuch-redux | 11/27         |
+| fasta          | 7/27          |
+
+Normalized - Go at **14/27** - **consuming 3.23x more** than the most efficient
+language (C) and only **4-5%** compared to the least efficient languages (Perl,
+Python).
+
+| Type        | Consumption (J)|
+|-------------|----------------|
+| Compiled    | 120            |
+| VM          | 576            |
+| Interpreted | 2365           |
+
+By paradigm:
+
+| Type       | Consumption (J) |
+|------------|-----------------|
+| Imperative | 125             |
+| OO         | 879             |
+| Functional | 1367            |
+| Scripting  | 2320            |
+
+## Where Go shines
+
+Category: Lowest peak memory usage.
+
+> The top 5 languages, also presented in Table 4, with the lowest value were: Pascal (66 Mb), Go (69 Mb), C (77 Mb), Fortran (82 Mb), and C++ (88 Mb);
+
+Also in multi-objective ranking:
+
+![](scp21-tab7.png)
+
+> In Table 7 we present four multi-objective rankings: time & memory, energy
+& time, energy & memory, and energy & time, & memory. For each ranking, each
+line represents a Pareto optimal set, or in other words the Pareto front, that
+is, a set containing the languages that are equivalent to each other for the
+underlying objectives. Simply put, **each line is a single rank or position**.
+
+
+> The most common performance characteristics of software languages used to
+evaluate and choose them are execution time and memory usage. If we consider
+these two characteristics in our evaluation, C, Pascal, and Go are equivalent.
+
+Extraordinaire, cette coincidence: Thompson (Bell Labs, C) and Griesemer
+(Wirth) are among the designers of Go.
+
+----
+
+> TIL: Chrestomathy, here: Rosetta Code (900 tasks throughout of 700 languages)
+
+> a collection of literary passages, used in the study of language -- C19: from Greek *khrēstomatheia*, from khrēstos useful + mathein to learn
+
+----
+
+There, Go seems to do a bit better.
+
+* 3/15, 5/18, 4/17, 8/21, 9/13 (ackermann), 4/13, 7/17
+
+![](scp21-tab10.png)
+
 
