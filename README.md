@@ -10,7 +10,7 @@
 
 Cf. [Small is beautiful: economics as if people mattered](https://openlibrary.org/works/OL1622912W/Small_Is_Beautiful) (1973) -- found via [Cloud Native Go](https://www.oreilly.com/library/view/cloud-native-go/9781492076322/)
 
-[![](sib-cover-89.png)](https://openlibrary.org/works/OL1622912W/Small_Is_Beautiful)
+[![](6738557-M.jpg)](https://openlibrary.org/works/OL1622912W/Small_Is_Beautiful)
 
 > Let us take a closer look at this 'natural capital'. First of all, and most
 > obviously, there are the **fossil fuels**. No-one, I am sure, will deny that
