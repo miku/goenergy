@@ -44,7 +44,8 @@ Many papers and whitepapers discussing EE:
 
 Personally:
 
-* "big data on a budget" projects, processing TBs w/o a cluster
+* "big data on a budget" projects, processing TBs w/o a cluster (e.g. [A data
+  web service](https://github.com/miku/dwstalk), [Fuzzy Matching with Command Line Tools and Go](https://gist.github.com/miku/fb429faad8b856caf6bba5305af024df), ...)
 
 ## Paper
 
