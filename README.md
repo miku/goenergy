@@ -38,7 +38,7 @@ Many papers and whitepapers discussing EE:
 
 ## Anecdata
 
-> Previously, we needed two servers, now we one is more than enough.
+> Previously, we needed two servers, now with Go one is more than enough.
 
 > We replaced a previous service with a Go implementation and we require 1/8 of the resources.
 
