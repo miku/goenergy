@@ -138,4 +138,7 @@ There, Go seems to do a bit better.
 
 ![](scp21-tab10.png)
 
+----
 
+Overall, Go holds its ground in this benchmark - and since we even have
+[Generics](https://tip.golang.org/doc/go1.18#generics) since a few months ...
