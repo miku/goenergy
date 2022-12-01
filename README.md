@@ -18,9 +18,9 @@ Cf. [Small is beautiful: economics as if people mattered](https://openlibrary.or
 > we are treating them as **income** items although they are undeniably
 > **capital** items.
 
-> If we treated them as capital items, we should be concerned with
+> **If we treated them as capital items, we should be concerned with
 > conservation: we should do everything in our power to try and minimise their
-> current rate of use; we might be saying, for instance, that the money
+> current rate of use**; we might be saying, for instance, that the money
 > obtained from the realisation of these assets - these irreplaceable assets -
 > must be placed into a special fund to be devoted exclusively to the evolution
 > of production methods and patterns of living which do not depend on fossil
