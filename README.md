@@ -56,6 +56,13 @@ Personally:
 > While the concern on the computers' energy efficiency started by the hardware
 > manufacturers, it quickly became a concern for software developers too [...]
 
+
+Note: The above study had disclaimers, but also suffered a couple of flaws, as
+noted in [It’s Not Easy Being Green: On the Energy Efficiency of Programming
+Languages](https://arxiv.org/pdf/2410.05460): *Our analysis suggests that the
+choice of programming language implementation has no significant impact on
+energy consumption beyond execution time*
+
 Using [RAPL](https://en.wikipedia.org/wiki/Perf_(Linux)#RAPL), [LWN545745](https://lwn.net/Articles/545745/) - to collect energy measurements.
 
 Some tools (on Ubuntu): powertop, powercap-utils, ...
