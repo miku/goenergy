@@ -60,9 +60,9 @@ Personally:
 
 📝 Note [2025]: The above study had disclaimers, but also suffered a couple of flaws, as
 noted in [It’s Not Easy Being Green: On the Energy Efficiency of Programming
-Languages](https://arxiv.org/pdf/2410.05460): *Our analysis suggests that the
+Languages](https://arxiv.org/pdf/2410.05460): "Our analysis suggests that the
 choice of programming language implementation has no significant impact on
-energy consumption beyond execution time*
+energy consumption beyond execution time."
 
 ----
 
